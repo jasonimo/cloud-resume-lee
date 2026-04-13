@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jason Lee – Resume</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #fff;
+      color: #111;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .resume {
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 2rem 2.5rem;
+    }
+
+    /* Header */
+    .resume-header {
+      text-align: center;
+      border-bottom: 1.5px solid #111;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .resume-header h1 {
+      font-size: 26px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      margin-bottom: 4px;
+    }
+
+    .resume-header p {
+      font-size: 13px;
+      color: #333;
+    }
+
+    .resume-header a {
+      color: #111;
+    }
+
+    /* Section */
+    .section {
+      margin-bottom: 1.1rem;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid #111;
+      padding-bottom: 2px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Job */
+    .job {
+      margin-bottom: 0.75rem;
+    }
+
+    .job-header, .job-role {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .job-company {
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    .job-location, .job-dates {
+      font-size: 13px;
+      color: #333;
+    }
+
+    .job-title {
+      font-style: italic;
+      font-size: 13px;
+    }
+
+    ul {
+      padding-left: 1.3rem;
+      margin-top: 3px;
+    }
+
+    li {
+      margin-bottom: 2px;
+    }
+
+    /* Projects */
+    .project-name {
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      margin-top: 0.5rem;
+      margin-bottom: 2px;
+    }
+
+    /* Skills */
+    .skills-row {
+      margin-bottom: 2px;
+    }
+
+    .skills-row strong {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Education */
+    .edu-header, .edu-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-school {
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+
+    .edu-degree {
+      font-style: italic;
+    }
+
+    /* Visitor counter */
+    .visitor-counter {
+      text-align: center;
+      margin-top: 1.5rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid #ccc;
+      font-size: 13px;
+      color: #555;
+      font-family: Arial, sans-serif;
+    }
+
+    #visit-count {
+      font-weight: bold;
+      color: #111;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+
+    <div class="resume-header">
+      <h1>Jason Lee</h1>
+      <p>Fairfax, VA &nbsp;|&nbsp; (703) 473-8001 &nbsp;|&nbsp; <a href="mailto:daehyunlee591@gmail.com">daehyunlee591@gmail.com</a></p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Work Experience</div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-company">KPMG</span>
+          <span class="job-location">McLean, VA</span>
+        </div>
+        <div class="job-role">
+          <span class="job-title">Federal Cloud Engineer</span>
+          <span class="job-dates">June 2022 – Current</span>
+        </div>
+        <ul>
+          <li>Engineered ETL pipelines using Python and AWS Glue to transform large-scale public datasets, loading cleansed data into Amazon Redshift for analytics and reporting.</li>
+          <li>Configured and deployed Group Policy Objects (GPOs) for enterprise solutions, ensuring DISA STIG compliance for AWS Workspaces applications.</li>
+          <li>Automated installation of pre-configured application bundles on client virtual machines using custom batch scripts, improving deployment speed and consistency.</li>
+          <li>Monitored and resolved security and performance issues using AWS SecurityHub and Inspector, reducing vulnerabilities and ensuring compliance with federal security standards.</li>
+          <li>Supported full lifecycle development of cloud infrastructure projects, from initial provisioning to production deployment, ensuring smooth and secure handoffs between environments.</li>
+          <li>Automated generation of weekly and monthly executive status reports using Python, streamlining reporting processes and saving ~10 hours of manual effort per month.</li>
+          <li>Maintained 100% patch compliance across all Linux and Windows servers, supporting system security and uptime for production environments.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-company">Verisk Financial Argus</span>
+          <span class="job-location">White Plains, NY</span>
+        </div>
+        <div class="job-role">
+          <span class="job-title">Global Operations/AWS Intern</span>
+          <span class="job-dates">June 2021 – February 2022</span>
+        </div>
+        <ul>
+          <li>Validated data reports of international banks to ensure consistency of the data normalization automation process.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Projects</div>
+
+      <div class="project-name">Cloud Data Pipeline &amp; DevOps Automation</div>
+      <ul>
+        <li>Designed and deployed a containerized batch data pipeline using Docker, executed on AWS ECS Fargate with scheduled execution via EventBridge Scheduler.</li>
+        <li>Implemented CI/CD pipelines with GitHub Actions to automatically build Docker images, run lint/tests, and push versioned artifacts to Amazon ECR.</li>
+        <li>Provisioned 100% of cloud infrastructure using Terraform, including ECS clusters, IAM roles, logging, and scheduler resources, enabling full environment deployment in &lt;5 minutes.</li>
+        <li>Built a reproducible infrastructure workflow enabling full environment deployment and teardown via Terraform plan/apply/destroy.</li>
+        <li>Implemented centralized logging and monitoring using Amazon CloudWatch Logs for containerized workloads.</li>
+      </ul>
+
+      <div class="project-name">Personal Website Hosted on AWS</div>
+      <ul>
+        <li>Developed and maintained a personal website hosted on AWS, utilizing web development technologies such as HTML, CSS, and JavaScript.</li>
+        <li>Implemented AWS CloudFront to distribute and deliver website content from the S3 Bucket to the internet.</li>
+        <li>Designed and implemented a Python-based real-time visitor counter, enabling automatic tracking of website traffic and the storage and updating of view counts in DynamoDB through Lambda functions.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Skills &amp; Certifications</div>
+      <div class="skills-row"><strong>Languages/Software:</strong> AWS, Python, GPO, AWS Glue, CloudWatch, S3, Linux, Terraform, Docker</div>
+      <div class="skills-row"><strong>Systems Design:</strong> Agile Development, SDLC, Architectural Diagrams</div>
+      <div class="skills-row"><strong>Clearance:</strong> Active Secret Clearance, Interim Top Secret Clearance</div>
+      <div class="skills-row"><strong>AWS Certified Cloud Practitioner</strong> | Amazon Web Services &nbsp;&nbsp; <em>Expires Jan 2027</em></div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="edu-header">
+        <span class="edu-school">James Madison University</span>
+        <span>Harrisonburg, VA</span>
+      </div>
+      <div class="edu-row">
+        <span class="edu-degree">B.B.A. in Computer Information Systems</span>
+        <span>May 2022</span>
+      </div>
+    </div>
+
+    <div class="visitor-counter">
+      Views: <span id="visit-count">—</span>
+    </div>
+
+  </div>
+
+  <script>
+    async function getVisitCount() {
+      try {
+        const response = await fetch('YOUR_API_GATEWAY_URL_HERE');
+        const data = await response.json();
+        document.getElementById('visit-count').textContent = data.count;
+      } catch (err) {
+        console.error('Could not load visit count:', err);
+      }
+    }
+
+    getVisitCount();
+  </script>
+</body>
+</html>
