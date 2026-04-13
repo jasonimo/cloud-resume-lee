@@ -17,3 +17,8 @@ output "resume_url" {
   description = "Live resume URL"
   value       = "https://${var.domain_name}"
 }
+
+output "api_endpoint" {
+  description = "API Gateway endpoint URL"
+  value       = "${aws_apigatewayv2_stage.resume.invoke_url}/count"
+}
